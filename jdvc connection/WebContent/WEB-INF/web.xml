@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>jdvc connection</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>ProfileSaveCtrl</display-name>
+    <servlet-name>ProfileSaveCtrl</servlet-name>
+    <servlet-class>com.maren.myproject.dao.ProfileDao.ProfileSaveCtrl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProfileSaveCtrl</servlet-name>
+    <url-pattern>/ProfileSaveCtrl</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ProfileSaveCtrls</display-name>
+    <servlet-name>ProfileSaveCtrls</servlet-name>
+    <servlet-class>com.maren.myproject.controller.ProfileSaveCtrls</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProfileSaveCtrls</servlet-name>
+    <url-pattern>/ProfileSaveCtrls</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ProfileViewCtrl</display-name>
+    <servlet-name>ProfileViewCtrl</servlet-name>
+    <servlet-class>com.maren.myfirstproject.controller.ProfileViewCtrl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProfileViewCtrl</servlet-name>
+    <url-pattern>/ProfileViewCtrl</url-pattern>
+  </servlet-mapping>
+</web-app>
